@@ -1,0 +1,1 @@
+-pipe -mthreads -D__GNUWIN32__ -D__WXMSW__ -DwxUSE_UNICODE -Wall -O2 -IC:\wxWidgets\include -IC:\wxWidgets\lib\gcc_lib\mswu

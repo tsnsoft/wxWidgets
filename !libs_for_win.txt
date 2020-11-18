@@ -1,0 +1,1 @@
+-LC:\wxWidgets\lib\gcc_lib -s -mthreads  -lwxmsw31u_core -lwxbase31u -lwxpng -lwxjpeg -lwxtiff -lwxzlib -lwxregexu -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lcomctl32 -lwsock32 -lodbc32 -lshlwapi -lversion -loleacc -luxtheme -mwindows

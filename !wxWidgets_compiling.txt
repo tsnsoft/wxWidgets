@@ -1,0 +1,38 @@
+https://github.com/wxWidgets/wxWidgets/releases/tag/v3.1.4
+https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.4/wxWidgets-3.1.4.zip
+https://wiki.wxwidgets.org/Compiling_and_getting_started
+
+sudo apt install build-essential
+sudo apt install libgtk-3-dev
+
+cd wxWidgets
+
+mkdir gtk-build
+cd gtk-build
+../configure
+
+make -j3
+sudo make install
+sudo ldconfig
+
+//// ../configure --disable-shared --enable-monolithic
+
+----------------------------------------
+
+cd wxWidgets/gtk-build
+sudo make install
+sudo ldconfig
+
+----------------------------------------
+
+--- ЭТО ТОЛЬКО ДЛЯ СБОРКИ НОВОЙ ВЕРСИИ WXWIDGETS -- НЕ ДЕЛАТЬ ТЕМ КТО НЕ В ТЕМЕ !!!
+
+Добавляем в переменную окружения Path стрку C:\MinGW\bin
+
+cd C:\wxWidgets\build\msw
+mingw32-make -f makefile.gcc BUILD=release SHARED=0
+mingw32-make -f makefile.gcc BUILD=debug SHARED=0
+
+Удаляем из переменной окружения Path стрку C:\MinGW\bin
+
+---
